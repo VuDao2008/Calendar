@@ -170,10 +170,17 @@
     
     <!-- Happy Birthday -->
     <div class="HBD">
-        <h1>
-                HAPPY BIRTHDAY 🎉
+        <h1 id="Text">
         </h1>
     </div>
+
+    <script>
+        const myTimeout = setTimeout(myGreeting, 6000);
+        
+        function myGreeting() {
+          document.getElementById("Text").innerHTML = "HAPPY BIRTHDAY 🎉"
+        }
+    </script>
 
 
     <!-- Lời chúc
