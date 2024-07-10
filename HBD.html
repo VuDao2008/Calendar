@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HBD.css">
+    <!-- <link rel="stylesheet" href="HBD.py"> -->
+    <title>Date</title>
+</head>
+<body>
+    <!-- Hỏi ngày -->
+    <div class="Question">
+      <h2>
+         HÃY NHẬP LỊCH <br> NGÀY HÔM NAY
+      </h2>    
+      <!-- <a id="Link" href="Cake.html"></a> -->
+
+      <div class="answer">
+         <p id="Text">
+            <a id="Link" href="Cake.html"></a>
+         </p>
+      </div>
+      
+  
+         <input type="date" id="Date">    
+  
+         <br>
+
+         <button onclick="myFunction()" id="submit">submit</button>
+    </div>
+
+
+    <script>
+      function myFunction() {  
+         var text;
+         var DateCheck = document.getElementById("Date").value;
+
+         switch(DateCheck) {
+            case "2024-07-15":
+               text = "Nhấn vô tớ đi :333";
+               document.getElementById("Link").innerHTML = text;
+            break;
+            default:
+               text = "Cậu thử lại ik :33";
+               document.getElementById("Text").innerHTML = text;
+         }
+      }
+
+    </script>
+</body>
+</html>
